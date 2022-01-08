@@ -2,10 +2,6 @@
 
 本项目是一款基于 <a href="https://avuejs.com/" target="_blank">Avue</a> 的表单设计器，拖拽式操作让你快速构建一个表单。
 
-:tada: 基于Bladex的工作流插件已上市。[授权地址](https://bladex.vip/#/market/flow)<br/>
-[表单设计器预览地址](https://form.nutflow.vip)<br>
-[流程设计器预览地址](https://bpmn.nutflow.vip)<br>
-[工作流插件预览地址](https://demo1.nutflow.vip)
 
 ## 更新日志
 [更新日志](../../blob/master/CHANGELOG.md)
@@ -34,15 +30,15 @@ $ npm i @smallwei/avue
 ### 组件
 
 ```sh
-$ npm i @sscfaith/avue-form-design
+$ npm i xy-form-design
 或
-$ yarn add @sscfaith/avue-form-design
+$ yarn add xy-form-design
 ```
 
 ### 源码
 
-<a href="https://github.com/sscfaith/avue-form-design" target="_blank">github</a> or
-<a href="https://gitee.com/sscgh/avue-from-design" target="_blank">gitee</a>
+<a href="https://github.com/yanweigen/xy-form-design" target="_blank">github</a> or
+<a href="https://gitee.com/yanweigen/xy-from-design" target="_blank">gitee</a>
 
 ```sh
 $ yarn
@@ -56,16 +52,16 @@ $ yarn serve
 ## 使用
 
 ```
-import AvueFormDesign from '@sscfaith/avue-form-design'
+import XYFormDesign from 'xy-form-design'
 
-Vue.use(AvueFormDesign)
+Vue.use(XYFormDesign)
 ```
 
 ```
-<avue-form-design style="height: 86vh;"
+<xy-form-design style="height: 86vh;"
                   :options="options"
                   storage
-                  @submit="handleSubmit"></avue-form-design>
+                  @submit="handleSubmit"></xy-form-design>
 ```
 
 ### 属性
@@ -76,8 +72,6 @@ Vue.use(AvueFormDesign)
 | storage | 开启本地存储功能，防止浏览器刷新丢失json | Boolean | false |
 | asideLeftWidth | 左工具栏宽度 | String/Number | '270px' |
 | asideRightWidth | 右工具栏宽度 | String/Number | '380px' |
-| showAvueDoc（已废弃，请使用toolbar） | 是否显示Avue文档 | Boolean | false |
-| showGithubStar | 是否显示GitHub Star | Boolean | true |
 | toolbar | 顶部工具栏 | Array | ['avue-doc', 'import', 'generate', 'preview', 'clear'] |
 | undoRedo | 是否开启撤销重做功能 | Boolean | true |
 | includeFields | 左侧展示字段 | Array | fieldsConfig.js中配置的字段 |
@@ -147,7 +141,7 @@ $ yarn build
 
 ## 捐赠
 如果你觉得本项目帮助到你的话，可以给作者买杯咖啡。
-<img src="https://form.beta.kim/donate.png">
+
 
 ## License
 
