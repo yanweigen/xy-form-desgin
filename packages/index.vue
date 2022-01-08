@@ -31,7 +31,7 @@
             <template v-else>
               <el-link class="field-title"
                        :underline="false"
-                       href="https://github.com/sscfaith/avue-form-design/blob/master/CHANGELOG.md#2020-09-22"
+                       href="https://github.com/yanweigen/xy-form-design/blob/master/CHANGELOG.md#2020-09-22"
                        target="_blank">自定义字段 <i class="el-icon-question"></i></el-link>
               <draggable tag="ul"
                          :list="customFields"
@@ -109,14 +109,6 @@
             </template>
           </div>
           <div style="display: flex; align-items: center;">
-            <iframe src="https://ghbtns.com/github-btn.html?user=sscfaith&repo=avue-form-design&type=star&count=true"
-                    frameborder="0"
-                    scrolling="0"
-                    width="100"
-                    height="20"
-                    title="GitHub"
-                    style="margin-left: 10px;"
-                    v-if="showGithubStar"></iframe>
             <slot name="toolbar-left"></slot>
             <el-button v-if="toolbar.includes('avue-doc')"
                        type="text"

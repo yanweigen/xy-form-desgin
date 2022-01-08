@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import App from './App'
 
-import AvueFormDesign from '../packages/';
+import XYFormDesign from '../packages/';
 import AvueUeditor from 'avue-plugin-ueditor'
 
 Vue.use(window.AVUE)
-Vue.use(AvueFormDesign)
+Vue.use(XYFormDesign)
 Vue.use(AvueUeditor)
 
 Vue.config.productionTip = false

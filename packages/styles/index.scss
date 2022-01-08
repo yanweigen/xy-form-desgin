@@ -24,6 +24,8 @@ $primary-background-color: #ecf8ff;
     background-color: #fff !important;
   }
 
+
+
   .fields-list {
     padding: 10px 0;
     width: 100%;
@@ -31,7 +33,7 @@ $primary-background-color: #ecf8ff;
 
     .field-title {
       padding: 8px 12px;
-      font-size: 13px;
+      font-size: 10px;
     }
 
     ul {
@@ -42,7 +44,7 @@ $primary-background-color: #ecf8ff;
     }
 
     .field-label {
-      font-size: 12px;
+      font-size: 10px;
       display: block;
       width: 47%;
       line-height: 26px;
@@ -71,7 +73,7 @@ $primary-background-color: #ecf8ff;
         .icon {
           margin-right: 6px;
           margin-left: 8px;
-          font-size: 14px;
+          font-size: 10px;
           display: inline-block;
           vertical-align: middle;
         }
@@ -84,7 +86,7 @@ $primary-background-color: #ecf8ff;
     }
 
     .field-label-disabled {
-      font-size: 12px;
+      font-size: 10px;
       display: block;
       width: 48%;
       line-height: 26px;
@@ -112,7 +114,7 @@ $primary-background-color: #ecf8ff;
         .icon {
           margin-right: 6px;
           margin-left: 8px;
-          font-size: 14px;
+          font-size: 10px;
           display: inline-block;
           vertical-align: middle;
         }
@@ -168,10 +170,25 @@ $primary-background-color: #ecf8ff;
 
       .widget-form-item {
         min-height: 30px;
-        padding: 5px 10px 18px;
+        padding: 5px 10px 10px;
         margin: 0;
         position: relative;
         border-left: 5px solid transparent;
+
+        .el-form-item__label {
+          font-size: 10px;
+        }
+
+        .el-form-item__content {
+          font-size: 10px;
+
+          .el-switch {
+
+            .el-switch__label {
+              font-size: 8px;
+            }
+          }
+        }
 
         &.required {
           .el-form-item__label::before {
@@ -463,7 +480,7 @@ $primary-background-color: #ecf8ff;
       }
 
       .iconfont {
-        font-size: 13px;
+        font-size: 10px;
       }
 
       .el-button--small.is-circle {
@@ -506,6 +523,9 @@ $primary-background-color: #ecf8ff;
       height: calc(100% - 45px);
       overflow-y: scroll;
     }
+    .el-tabs .el-tabs__header .el-tabs__nav-wrap .el-tabs__nav-scroll .el-tabs__nav .el-tabs__item {
+      font-size: 13px;
+    }
 
     .widget-config {
       .el-tabs__header {
@@ -515,8 +535,25 @@ $primary-background-color: #ecf8ff;
         margin: 0;
       }
 
+
       .el-tabs__content {
         margin-top: 0;
+      }
+
+      .el-form .el-collapse .el-collapse-item .el-collapse-item__wrap .el-collapse-item__content .el-form-item .el-form-item__label {
+        font-size: 10px;
+      }
+
+      .el-form .el-collapse .el-collapse-item .el-collapse-item__wrap .el-collapse-item__content .el-form-item .el-form-item__label .el-link .el-link--inner {
+        font-size: 10px;
+      }
+
+      .el-form .el-collapse .el-collapse-item .el-collapse-item__wrap .el-collapse-item__content .el-form-item .el-form-item__content .el-tabs .el-tabs__content .el-tab-pane {
+        font-size: 10px;
+      }
+
+      .el-form .el-collapse .el-collapse-item .el-collapse-item__wrap .el-collapse-item__content .el-form-item .el-form-item__content .el-tabs .el-tabs__header .el-tabs__nav-wrap .el-tabs__nav-scroll .el-tabs__nav .el-tabs__item{
+        font-size: 10px;
       }
 
       .ghost {
@@ -589,7 +626,7 @@ $primary-background-color: #ecf8ff;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 20px;
+  padding: 10px;
   display: flex;
 
   button {
@@ -620,4 +657,8 @@ $primary-background-color: #ecf8ff;
   :focus {
     outline: 0;
   }
+}
+
+.form-config-container .el-form .el-form-item .el-form-item__label{
+  font-size: 10px;
 }
