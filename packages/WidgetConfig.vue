@@ -4,7 +4,7 @@
              v-if="this.data && Object.keys(this.data).length > 0"
              labelPosition="left"
              labelWidth="90px"
-             size="mini">
+             size="small">
       <el-collapse v-model="collapse">
         <el-collapse-item name="1"
                           title="基本属性">
@@ -49,7 +49,7 @@
                              v-model="data.span"
                              controls-position="right"
                              placeholder="表单栅格"
-                             :min="4"
+                             :min="8"
                              :max="24"></el-input-number>
           </el-form-item>
           <el-form-item label="数据类型"

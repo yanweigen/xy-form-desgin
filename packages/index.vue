@@ -97,44 +97,51 @@
           <div>
             <template v-if="undoRedo">
               <el-button type="text"
-                         size="mini"
+                         size="medium"
                          icon="el-icon-refresh-left"
                          :disabled="historySteps.index == 0"
                          @click="widgetForm = handleUndo()">撤销</el-button>
               <el-button type="text"
-                         size="mini"
+                         size="medium"
                          icon="el-icon-refresh-right"
                          :disabled="historySteps.index == historySteps.steps.length - 1"
                          @click="widgetForm = handleRedo()">重做</el-button>
             </template>
           </div>
           <div style="display: flex; align-items: center;">
-
+            <iframe src="https://ghbtns.com/github-btn.html?user=sscfaith&repo=avue-form-design&type=star&count=true"
+                    frameborder="0"
+                    scrolling="0"
+                    width="100"
+                    height="20"
+                    title="GitHub"
+                    style="margin-left: 10px;"
+                    v-if="showGithubStar"></iframe>
             <slot name="toolbar-left"></slot>
             <el-button v-if="toolbar.includes('avue-doc')"
                        type="text"
-                       size="mini"
+                       size="medium"
                        icon="el-icon-document"
                        @click="handleAvueDoc">Avue文档</el-button>
             <el-button v-if="toolbar.includes('import')"
                        type="text"
-                       size="mini"
+                       size="medium"
                        icon="el-icon-upload2"
                        @click="importJsonVisible = true">导入JSON</el-button>
             <el-button v-if="toolbar.includes('generate')"
                        type="text"
-                       size="mini"
+                       size="medium"
                        icon="el-icon-download"
                        @click="handleGenerateJson">生成JSON</el-button>
             <el-button v-if="toolbar.includes('preview')"
                        type="text"
-                       size="mini"
+                       size="medium"
                        icon="el-icon-view"
                        @click="handlePreview">预览</el-button>
             <el-button v-if="toolbar.includes('clear')"
                        class="danger"
                        type="text"
-                       size="mini"
+                       size="medium"
                        icon="el-icon-delete"
                        @click="handleClear">清空</el-button>
             <slot name="toolbar"></slot>
@@ -151,7 +158,7 @@
       <el-aside class="widget-config-container"
                 :width="rightWidth">
         <el-tabs v-model="configTab"
-                 stretch >
+                 stretch>
           <el-tab-pane label="字段属性"
                        name="widget"
                        style="padding: 0 10px;">
@@ -161,7 +168,7 @@
           <el-tab-pane label="表单属性"
                        name="form"
                        lazy
-                       style="padding: 0 10px;" >
+                       style="padding: 0 10px;">
             <form-config :data="widgetForm"></form-config>
           </el-tab-pane>
         </el-tabs>
@@ -177,10 +184,10 @@
                        keyIndex="import"
                        height="82%"></monaco-editor>
         <div class="drawer-foot">
-          <el-button size="mini"
+          <el-button size="medium"
                      type="primary"
                      @click="handleImportJsonSubmit">确定</el-button>
-          <el-button size="mini"
+          <el-button size="medium"
                      type="danger"
                      @click="importJsonVisible = false">取消</el-button>
         </div>
@@ -196,7 +203,7 @@
                        height="82%"
                        :read-only="true"></monaco-editor>
         <div class="drawer-foot">
-          <el-button size="mini"
+          <el-button size="medium"
                      type="primary"
                      @click="handleGenerate">生成</el-button>
 
@@ -247,7 +254,7 @@
                 <el-switch v-model="configOption.dropQuotesOnNumbers"></el-switch>
               </el-form-item>
             </el-form>
-            <el-button size="mini"
+            <el-button size="medium"
                        type="primary"
                        @click="handleCopy"
                        slot="reference"
@@ -315,9 +322,12 @@ export default {
     },
     asideRightWidth: {
       type: [String, Number],
-      default: '300px'
+      default: '380px'
     },
-
+    showGithubStar: {
+      type: Boolean,
+      default: true
+    },
     toolbar: {
       type: Array,
       default: () => {

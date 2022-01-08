@@ -4,7 +4,7 @@
              label-suffix="："
              label-width="130px"
              size="small">
-      <el-form-item label="标签对齐方式" size="mini">
+      <el-form-item label="标签对齐方式">
         <el-select v-model="data.labelPosition"
                    placeholder="标签对齐方式">
           <el-option label="左对齐"
@@ -15,16 +15,16 @@
                      value="top"></el-option>
         </el-select>
       </el-form-item>
-      <el-form-item label="标签宽度" size="mini">
+      <el-form-item label="标签宽度">
         <el-input-number v-model="data.labelWidth"
-                         :min="10"
+                         :min="80"
                          :max="200"
                          :step="10"
                          controls-position="right"
                          placeholder="标签宽度"
                          style="width: 100%"></el-input-number>
       </el-form-item>
-      <el-form-item label="标签后缀" size="mini">
+      <el-form-item label="标签后缀">
         <el-input v-model="data.labelSuffix"
                   placeholder="标签后缀"></el-input>
       </el-form-item>
@@ -37,11 +37,11 @@
                          placeholder="项之间的间隔"
                          style="width: 100%"></el-input-number>
       </el-form-item>
-      <el-form-item label="多分组转标签" size="mini">
+      <el-form-item label="多分组转标签">
         <el-switch v-model="data.tabs"
                    active-color="#409EFF"></el-switch>
       </el-form-item>
-      <el-form-item label="详情模式" size="mini">
+      <el-form-item label="详情模式">
         <el-switch v-model="data.detail"></el-switch>
       </el-form-item>
       <!-- <el-form-item label="标签样式"
@@ -55,7 +55,7 @@
                      value="border-card"></el-option>
         </el-select>
       </el-form-item> -->
-      <el-form-item label="显示按钮" size="mini">
+      <el-form-item label="显示按钮">
         <el-switch v-model="data.menuBtn"
                    active-color="#409EFF"></el-switch>
       </el-form-item>
@@ -72,7 +72,7 @@
         </el-select>
       </el-form-item> -->
       <el-form-item label="显示提交按钮"
-                    v-if="data.menuBtn" size="mini">
+                    v-if="data.menuBtn">
         <el-switch v-model="data.submitBtn"
                    active-color="#409EFF"></el-switch>
       </el-form-item>
@@ -89,13 +89,13 @@
         </el-select>
       </el-form-item> -->
       <el-form-item label="提交按钮的文字"
-                    v-if="data.menuBtn && data.submitBtn" size="mini">
+                    v-if="data.menuBtn && data.submitBtn">
         <el-input v-model="data.submitText"
                   placeholder="提交按钮的文字"></el-input>
       </el-form-item>
 
       <el-form-item label="显示清空按钮"
-                    v-if="data.menuBtn" size="mini">
+                    v-if="data.menuBtn">
         <el-switch v-model="data.emptyBtn"
                    active-color="#409EFF"></el-switch>
       </el-form-item>
@@ -112,14 +112,14 @@
         </el-select>
       </el-form-item> -->
       <el-form-item label="清空按钮的文字"
-                    v-if="data.menuBtn && data.emptyBtn" size="mini">
+                    v-if="data.menuBtn && data.emptyBtn">
         <el-input v-model="data.emptyText"
                   placeholder="提交按钮的文字"></el-input>
       </el-form-item>
-      <el-form-item label="全局只读" size="mini">
+      <el-form-item label="全局只读">
         <el-switch v-model="data.readonly"></el-switch>
       </el-form-item>
-      <el-form-item label="全局禁用" size="mini" >
+      <el-form-item label="全局禁用">
         <el-switch v-model="data.disabled"></el-switch>
       </el-form-item>
       <!-- <el-form-item label="全局栅格">

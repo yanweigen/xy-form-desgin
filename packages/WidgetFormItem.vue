@@ -7,7 +7,7 @@
     </div>
     <component v-else
                :is="getComponent(item.type, item.component)"
-               v-bind="Object.assign(deepClone(item), params, { size:item.size || 'mini' })"
+               v-bind="Object.assign(deepClone(item), params, { size:item.size || 'small' })"
                :multiple="false"
                :placeholder="item.placeholder || getPlaceholder(item)"
                :dic="item.dicData"
