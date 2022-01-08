@@ -3,7 +3,7 @@
     <el-form label-position="left"
              label-suffix="："
              label-width="130px"
-             size="small">
+             size="mini">
       <el-form-item label="标签对齐方式">
         <el-select v-model="data.labelPosition"
                    placeholder="标签对齐方式">

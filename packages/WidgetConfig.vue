@@ -4,7 +4,7 @@
              v-if="this.data && Object.keys(this.data).length > 0"
              labelPosition="left"
              labelWidth="90px"
-             size="small">
+             size="mini">
       <el-collapse v-model="collapse">
         <el-collapse-item name="1"
                           title="基本属性">

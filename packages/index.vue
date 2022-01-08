@@ -97,12 +97,12 @@
           <div>
             <template v-if="undoRedo">
               <el-button type="text"
-                         size="medium"
+                         size="mini"
                          icon="el-icon-refresh-left"
                          :disabled="historySteps.index == 0"
                          @click="widgetForm = handleUndo()">撤销</el-button>
               <el-button type="text"
-                         size="medium"
+                         size="mini"
                          icon="el-icon-refresh-right"
                          :disabled="historySteps.index == historySteps.steps.length - 1"
                          @click="widgetForm = handleRedo()">重做</el-button>
@@ -112,28 +112,28 @@
             <slot name="toolbar-left"></slot>
             <el-button v-if="toolbar.includes('avue-doc')"
                        type="text"
-                       size="medium"
+                       size="mini"
                        icon="el-icon-document"
                        @click="handleAvueDoc">Avue文档</el-button>
             <el-button v-if="toolbar.includes('import')"
                        type="text"
-                       size="medium"
+                       size="mini"
                        icon="el-icon-upload2"
                        @click="importJsonVisible = true">导入JSON</el-button>
             <el-button v-if="toolbar.includes('generate')"
                        type="text"
-                       size="medium"
+                       size="mini"
                        icon="el-icon-download"
                        @click="handleGenerateJson">生成JSON</el-button>
             <el-button v-if="toolbar.includes('preview')"
                        type="text"
-                       size="medium"
+                       size="mini"
                        icon="el-icon-view"
                        @click="handlePreview">预览</el-button>
             <el-button v-if="toolbar.includes('clear')"
                        class="danger"
                        type="text"
-                       size="medium"
+                       size="mini"
                        icon="el-icon-delete"
                        @click="handleClear">清空</el-button>
             <slot name="toolbar"></slot>
