@@ -5,7 +5,7 @@
     "url": "https://github.com/yanweigen",
     "email": "24331105@qq.com"
   },
-  "version": "2.1.0",
+  "version": "1.0.0",
   "main": "lib/index.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
