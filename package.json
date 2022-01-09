@@ -5,13 +5,13 @@
     "url": "https://github.com/yanweigen",
     "email": "24331105@qq.com"
   },
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "lib/index.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-	"dev": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "lib": "vue-cli-service build --target lib --name XYFormDesign --dest lib --filename index --formats umd-min ./packages/index.js",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
